@@ -1,0 +1,94 @@
+/* Centrage du formulaire */
+#user-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+  padding: 20px;
+}
+
+/* Style du titre */
+#user-form h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Style du formulaire */
+#user-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des labels */
+#user-form label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Style des champs input et select */
+#user-form input[type="text"],
+#user-form input[type="tel"],
+#user-form input[type="email"],
+#user-form select,
+#user-form input[type="date"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+#user-form input:focus,
+#user-form select:focus {
+  border-color: #4A90E2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Style du bouton */
+#user-form button {
+  background-color: #4A90E2;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#user-form button:hover {
+  background-color: #357ABD;
+}
+
+/* Responsivité */
+@media (max-width: 600px) {
+  #user-form {
+    padding: 15px;
+  }
+
+  #user-form h2 {
+    font-size: 22px;
+  }
+
+  #user-form form {
+    width: 90%;
+  }
+}

@@ -1,0 +1,60 @@
+/* Style général de la navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #565758;
+    padding: 0px;
+    color: white;
+  
+
+  }
+  
+  /* Style du titre centré */
+  .navbar-title {
+    font-weight: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;
+
+  }
+  
+  /* Conteneur pour le contenu en ligne */
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    color: black;
+
+  }
+  
+  /* Partie gauche (formulaire) */
+  .navbar-left {
+    flex: 3;
+  }
+  
+  /* Partie droite (liens) */
+  .navbar-right {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Style des liens */
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #0d3966;
+    padding: 3px 6px;
+    border-radius: 5px;
+    transition: background 0.1s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #288e36;
+  }
+  
